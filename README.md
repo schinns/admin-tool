@@ -1,21 +1,43 @@
-### 청남 애드민 툴
+## 청남 애드민 툴
 
-#### boizzz table
+### MVP
+
+* [] Auth with JWT
+* [] Create new boi
+* [] Create new leader
+* [] Create new activity
+* [] Send email when activity has taken place
+* [] Send email to participants for feedback
+* [] Send email to leaders report
+
+#### boiz table
 
    id  |  name   |  group  |   email    |   phone   |  birthday |  prefer_email  |  
   ---  |   ---   |   ---   |    ---     |    ---    |    ---    |      ---       |   
   int  | varchar |   int   |   varchar  |     int   |    date   |      bool      |   
 
 
-#### leaderzzz table
+#### leader table
 
 id   |  name   |  calling  |   email    |  phone
 ---  |   ---   |    ---    |    ---     |   ---
-int  | varchar |   int     |   varchar  |   int
+int  | varchar |    int    |   varchar  |   int
 
 
-#### activitiezzz table
+#### activities table
 
 id   |  description   |     date        
 ---  |      ---       |     ---      
 int  |    varchar     |   timestamp  
+
+#### participants table
+
+id   |   boiz_id      |  activities_id        
+---  |      ---       |       ---      
+int  |      int       |       int  
+
+#### feedbacks table
+
+id   |   boiz_id      |  activities_id    |   feedback     
+---  |      ---       |       ---         |     ---
+int  |      int       |       int         |    text
