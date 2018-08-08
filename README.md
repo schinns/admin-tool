@@ -2,13 +2,13 @@
 
 ### MVP
 
-* [] Auth with JWT
-* [] Create new boi
-* [] Create new leader
-* [] Create new activity
-* [] Send email when activity has taken place
-* [] Send email to participants for feedback
-* [] Send email to leaders report
+* [ ] Auth with JWT
+* [ ] Create new boi
+* [ ] Create new leader
+* [ ] Create new activity
+* [ ] Send email when activity has taken place
+* [ ] Send email to participants for feedback
+* [ ] Send email to leaders report
 
 #### boiz table
 
