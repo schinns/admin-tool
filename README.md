@@ -26,9 +26,9 @@ int  | varchar |    int    |   varchar  |   int
 
 #### activities table
 
-id   |  description   |     date        
----  |      ---       |     ---      
-int  |    varchar     |   timestamp  
+id   |  description   |     date     |  taken_place  
+---  |      ---       |     ---      |      ---
+int  |    varchar     |   timestamp  |      bool
 
 #### participants table
 
