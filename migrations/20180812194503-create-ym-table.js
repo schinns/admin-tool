@@ -15,20 +15,23 @@ exports.setup = function(options, seedLink) {
 };
 
 exports.up = function(db, callback) {
-  return db.createTable("activities", {
+  return db.createTable("ym", {
     id: {
       type: "int",
       primaryKey: true,
       autoIncrement: true
     },
-    description: "text",
-    date: "timestamp",
-    taken_place: "boolean"
+    name: "text",
+    group: "int",
+    email: "text",
+    phone: "text",
+    birthday: "timestamp",
+    prefer_email: "boolean"
   })
 };
 
 exports.down = function(db) {
-  return db.dropTable("activities");
+  return db.dropTable("ym");
 };
 
 exports._meta = {

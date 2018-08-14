@@ -10,18 +10,18 @@
 * [ ] Send email to participants for feedback
 * [ ] Send email to leaders report
 
-#### boiz table
+#### ym table
 
    id  |  name   |  group  |   email    |   phone   |  birthday |  prefer_email  |  
   ---  |   ---   |   ---   |    ---     |    ---    |    ---    |      ---       |   
-  int  | varchar |   int   |   varchar  |     int   |    date   |      bool      |   
+  int  | varchar |   int   |   varchar  |  varchar  |    date   |      bool      |   
 
 
 #### leader table
 
 id   |  name   |  calling  |   email    |  phone
 ---  |   ---   |    ---    |    ---     |   ---
-int  | varchar |    int    |   varchar  |   int
+int  | varchar |    int    |  varchar   |  varchar
 
 
 #### activities table
@@ -32,12 +32,12 @@ int  |    varchar     |   timestamp  |      bool
 
 #### participants table
 
-id   |   boiz_id      |  activities_id        
+id   |     ym_id      |  activities_id        
 ---  |      ---       |       ---      
 int  |      int       |       int  
 
 #### feedbacks table
 
-id   |   boiz_id      |  activities_id    |   feedback     
+id   |     ym_id      |  activities_id    |   feedback     
 ---  |      ---       |       ---         |     ---
 int  |      int       |       int         |    text
